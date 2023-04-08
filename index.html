@@ -29,6 +29,10 @@
             text-decoration: none;
         }
 
+        p {
+            font: 400 1rem/1.5 'Avenir Next Cyr',sans-serif;
+        }
+
         h1{
             font-weight: 600;
             font-size: 55px;
@@ -40,7 +44,8 @@
             line-height: unset!important;
             margin-bottom: 1.5rem;
             font-weight: 600;
-            font-size: 32px;
+            font-size: 42px;
+            text-transform: uppercase;
         }
 
         .banner{
@@ -50,12 +55,83 @@
             background-color: #F3F3F1;
         }
 
+
+       
+
+        /* BTN */
+        .btn {
+            --bs-btn-padding-x: 1rem;
+            --bs-btn-padding-y: 0.75rem;
+            --bs-btn-font-family: ;
+            --bs-btn-font-size: 0.9rem;
+            --bs-btn-font-weight: 400;
+            --bs-btn-line-height: 1;
+            --bs-btn-color: #0f172a;
+            --bs-btn-bg: transparent;
+            --bs-btn-border-width: 2px;
+            --bs-btn-border-color: transparent;
+            --bs-btn-border-radius: 0.25rem;
+            --bs-btn-hover-border-color: transparent;
+            --bs-btn-box-shadow: inset 0 1px 0 hsla(0,0%,100%,.15),0 1px 1px rgba(17,17,27,.075);
+            --bs-btn-disabled-opacity: 0.65;
+            --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb),.5);
+            background-color: var(--bs-btn-bg);
+            border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+            border-radius: var(--bs-btn-border-radius);
+            color: var(--bs-btn-color);
+            cursor: pointer;
+            display: inline-block;
+            font-family: var(--bs-btn-font-family);
+            font-size: var(--bs-btn-font-size);
+            font-weight: var(--bs-btn-font-weight);
+            line-height: var(--bs-btn-line-height);
+            padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+            text-align: center;
+            text-decoration: none;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+        }
+
+        .btn-dark {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #333138;
+            --bs-btn-border-color: #333138;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #525056;
+            --bs-btn-hover-border-color: #47464c;
+            --bs-btn-focus-shadow-rgb: 82,80,86;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #5c5a60;
+            --bs-btn-active-border-color: #47464c;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(17,17,27,.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: #333138;
+            --bs-btn-disabled-border-color: #333138;
+        }
+
+        /*  */
+
+        .donation-payment-button {
+            align-items: center;
+            display: flex;
+            height: 48px;
+            justify-content: center;
+            max-width: 207px;
+            width: 100%;
+        }
+
         .border-radius {
             border-radius: .25rem
         }
 
         .border-rounded {
             border-radius: 99rem
+        }
+        .uppercase {
+            text-transform: uppercase!important;
         }
 
         @media (max-width: 767px) {
@@ -69,7 +145,7 @@
     <main>
         <section class="full-height-section banner">
             <div class="container-fluid container-layout">
-              <div class="row justify-content-end align-items-center" style="height: 100vh;">
+              <div class="row justify-content-center align-items-center" style="height: 100vh;">
                 <div class="col-md-4">
                   <h1>Розіграш КРОК ДО ПЕРЕМОГИ для 3 ОШБр Азов</h1>
                 </div>
@@ -78,12 +154,12 @@
           </section>
           <section class="full-height-section">
             <div class="container">
-              <div class="row">
+              <div class="row justify-content-center align-items-center" style="height: 100vh;">
                 <div class="col-md-6 text-center">
                   <h2 class="title">КРОК ДО ПЕРЕМОГИ</h2>
                   <div class="my-4">
-                    <a href="/" class="btn btn-dark uppercase bolder donation-payment-button border-rounded">монобанка</a>
-                    <a href="/" class="btn btn-dark uppercase bolder donation-payment-button border-rounded">paypal</a>
+                    <a href="https://send.monobank.ua/jar/9nJmjXLDu4" class="btn btn-dark uppercase bolder donation-payment-button border-rounded">монобанка</a>
+                    <a href="https://tviykrok.com.ua/donations/" class="btn btn-dark uppercase bolder donation-payment-button border-rounded">Підтримати</a>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -114,7 +190,7 @@
           </section> 
           <section class="full-width-section full-height-section">
             <div class="container-fluid">
-              <h2 class="text-center mb-5">Мобільна майстерня LOCKER для 3-ої ОШБр Азов Київ</h2>
+              <h2 class="title text-center mb-5">Мобільна майстерня LOCKER для 3-ої ОШБр Азов Київ</h2>
               <div class="row">
                 <div class="col-md-4">
                   <img src="./images/9.png" class="img-fluid mb-4">
@@ -132,12 +208,15 @@
             <div class="container">
               <div class="row border p-4">
                 <div class="col-md-6">
-                  <h3>Розіграш триває до 17 квітня</h3>
+                  <h3 class="title">Розіграш триває до 17 квітня</h3>
                 </div>
                 <div class="col-md-6 text-center">
-                  <h3>Заголовок справа</h3>
-                  <p>Текст справа</p>
-                  <button class="btn btn-dark uppercase bolder donation-payment-button border-rounded">Кнопка</button>
+                  <h3>Долучайся до ініціативи</h3>
+                  <p>Зроби свій крок до перемоги</p>
+                  <div class="my-4">
+                    <a href="https://send.monobank.ua/jar/9nJmjXLDu4" class="btn btn-dark uppercase bolder donation-payment-button border-rounded">монобанка</a>
+                    <a href="https://tviykrok.com.ua/donations/" class="btn btn-dark uppercase bolder donation-payment-button border-rounded">Підтримати</a>
+                  </div>
                 </div>
               </div>
             </div>
