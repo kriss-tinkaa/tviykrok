@@ -18,6 +18,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
+            min-width: 320px;
         }
 
         .full-height-section {
@@ -34,16 +35,20 @@
         }
 
         h1{
-            font-weight: 600;
-            font-size: 65px;
+            font-weight: 800;
+            font-size: 76px;
             text-transform: uppercase;
             text-align: center;
+            border-bottom: 3px solid #333138;
         }
         h2{
             /* font-weight: 600; */
-            font-size: 55px;
+            font-size: 3em;
             /* text-transform: uppercase; */
             text-align: center;
+            max-width: 525px;
+            width: 100%;
+            margin: 0 auto;
         }
         h3{
             font-weight: 700;
@@ -81,8 +86,7 @@
             right: 0;
             bottom: 0;
             top: 0;
-            background-color: #f3f3f187;
-    /* filter: blur(21px); */
+            background-color: #f3f3f18f;
         }
 
 
@@ -165,19 +169,13 @@
             font-weight: 600!important;
         }
 
-        .img-fluid {
+        @media (min-width: 767px) {
+            .img-fluid {
             max-width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        /* @media (max-width: 991px){
-            h1{
-                font-size: 30px;
-                text-align: center;
-            }
-            
-        } */
-
+        }
         @media (max-width: 767px) {
             .full-height-section {
                 height: auto;
@@ -215,9 +213,9 @@
         <section class="full-height-section banner">
             <div class="container-fluid container-layout">
               <div class="row justify-content-center align-items-center">
-                <div class="col-md-4 banner__title">
+                <div class="col-lg-6 banner__title">
                   <h1>Розіграш</h1>
-                  <h2>"КРОК ДО ПЕРЕМОГИ" для <b>3 ОШБр</b> АЗОВ</h2>
+                  <h2>"КРОК ДО ПЕРЕМОГИ" для 3 ОШБр АЗОВ</h2>
                 </div>
               </div>
             </div>
@@ -252,7 +250,7 @@
                 </div>
                 <div class="col-md-6 order-md-1">
                   <p>Ця велика мобільна шиномонтажна майстерня дозволить військовим швидко та ефективно змінювати та ремонтувати шини на техніці. 
-                    А це, зокрема, дуже важливо для відважних хлопців з 3 окремої штурмової бригади Азов Київ, які зараз знаходяться в самому пеклі 
+                    А це, зокрема, дуже важливо для відважних хлопців з 3 Окремої Штурмової Бригади Азов Київ, які зараз знаходяться в самому пеклі 
                     та захищають нашу землю від агресорів.</p>
                 </div>
               </div>
