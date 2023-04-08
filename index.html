@@ -17,26 +17,61 @@
             font-family: Avenir Next Cyr,sans-serif;
             font-style: normal;
             font-weight: 400;
+            font-size: 16px;
         }
 
         .full-height-section {
         min-height: 100vh; /* Высота секции на десктопах */
         }
 
-        @media (max-width: 767px) {
-        .full-height-section {
-            height: auto; /* Высота секции на мобильных устройствах */
+        a {
+            color: #333138;
+            text-decoration: none;
         }
+
+        h1{
+            font-weight: 600;
+            font-size: 55px;
+            text-transform: uppercase;
+            }
+
+        .title {
+            font-size: calc(.95rem + 1vw);
+            line-height: unset!important;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            font-size: 32px;
+        }
+
+        .banner{
+            background-image: url('./images/4.jpeg');
+            background-repeat: no-repeat;
+            background-position: left;
+            background-color: #F3F3F1;
+        }
+
+        .border-radius {
+            border-radius: .25rem
+        }
+
+        .border-rounded {
+            border-radius: 99rem
+        }
+
+        @media (max-width: 767px) {
+            .full-height-section {
+                height: auto; /* Высота секции на мобильных устройствах */
+            }
         }
     
   </style>
   <body>
     <main>
-        <section class="full-height-section bg-image" style="background-image: url('./images/4.jpeg');">
+        <section class="full-height-section banner">
             <div class="container-fluid container-layout">
               <div class="row justify-content-end align-items-center" style="height: 100vh;">
-                <div class="col-md-6">
-                  <h2 class="text-white">Розіграш КРОК ДО ПЕРЕМОГИ для 3 ОШБр Азов</h2>
+                <div class="col-md-4">
+                  <h1>Розіграш КРОК ДО ПЕРЕМОГИ для 3 ОШБр Азов</h1>
                 </div>
               </div>
             </div>
@@ -45,16 +80,16 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-6 text-center">
-                  <h2 style="font-size: 5.8em;">КРОК ДО ПЕРЕМОГИ</h2>
+                  <h2 class="title">КРОК ДО ПЕРЕМОГИ</h2>
                   <div class="my-4">
-                    <a href="/" class="btn btn-primary btn-lg rounded-pill mx-2" style="border-radius: 7.32em;">монобанка</a>
-                    <a href="/" class="btn btn-secondary btn-lg rounded-pill mx-2" style="border-radius: 7.32em;">paypal</a>
+                    <a href="/" class="btn btn-dark uppercase bolder donation-payment-button border-rounded">монобанка</a>
+                    <a href="/" class="btn btn-dark uppercase bolder donation-payment-button border-rounded">paypal</a>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <h3>Підтримай захисників Бахмуту</h3>
                   <p>
-                    Бахмуту - це не просто територія на карті, це символ національної свободи та незалежності. Наші військові, які знаходяться на передовій, з ризиком для свого життя відстоюють кожен дюйм цієї землі. І саме мужність та відданість Україні роблять нашу країну сильнішою та безпечнішою.
+                    Бахмут - це не просто територія на карті, це символ національної свободи та незалежності. Наші військові, які знаходяться на передовій, з ризиком для свого життя відстоюють кожен дюйм цієї землі. І саме мужність та відданість Україні роблять нашу країну сильнішою та безпечнішою.
                   </p>
                 </div>
               </div>
@@ -62,7 +97,7 @@
           </section>
           <section class="full-height-section">
             <div class="container">
-              <h2 class="text-center mb-5">ДІЄМО Разом</h2>
+              <h2 class="title text-center mb-5">ДІЄМО Разом</h2>
               <div class="row">
                 <div class="col-md-6 order-md-2">
                   <div class="embed-responsive embed-responsive-16by9 mb-4">
@@ -70,7 +105,9 @@
                   </div>
                 </div>
                 <div class="col-md-6 order-md-1">
-                  <p>Ця велика мобільна шиномонтажна майстерня дозволить військовим швидко та ефективно змінювати та ремонтувати шини на техніці. А це, зокрема, дуже важливо для відважних хлопців з 3 окрема штурмова бригада Азов Київ, які зараз знаходяться в самому пеклі та захищають нашу землю від агресорів.</p>
+                  <p>Ця велика мобільна шиномонтажна майстерня дозволить військовим швидко та ефективно змінювати та ремонтувати шини на техніці. 
+                    А це, зокрема, дуже важливо для відважних хлопців з 3 окремої штурмової бригади Азов Київ, які зараз знаходяться в самому пеклі 
+                    та захищають нашу землю від агресорів.</p>
                 </div>
               </div>
             </div>
@@ -100,7 +137,7 @@
                 <div class="col-md-6 text-center">
                   <h3>Заголовок справа</h3>
                   <p>Текст справа</p>
-                  <button class="btn btn-primary rounded-pill">Кнопка</button>
+                  <button class="btn btn-dark uppercase bolder donation-payment-button border-rounded">Кнопка</button>
                 </div>
               </div>
             </div>
